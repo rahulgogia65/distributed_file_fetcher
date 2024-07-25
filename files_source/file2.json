@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "revenue": 234,
+            "currency": "USD",
+            "date": "2019-02-02",
+            "key": "value",
+            "key2": "value2"
+        },
+        {
+            "revenue": 345,
+            "currency": "INR",
+            "date": "2019-02-03",
+            "key": "value",
+            "key2": "value2"
+        },
+        {
+            "revenue": 456,
+            "currency": "AED",
+            "date": "2019-02-04",
+            "key": "value",
+            "key2": "value2"
+        },
+        {
+            "revenue": 567,
+            "currency": "GBP",
+            "date": "2019-02-05",
+            "key": "value",
+            "key2": "value2"
+        },
+        {
+            "revenue": 678,
+            "currency": "EUR",
+            "date": "2019-02-06",
+            "key": "value",
+            "key2": "value2"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "revenue": 123,
+            "currency": "INR",
+            "date": "2019-01-01",
+            "key": "value"
+        },
+        {
+            "revenue": 234,
+            "currency": "AED",
+            "date": "2019-01-02",
+            "key": "value"
+        },
+        {
+            "revenue": 345,
+            "currency": "GBP",
+            "date": "2019-01-03",
+            "key": "value"
+        },
+        {
+            "revenue": 456,
+            "currency": "EUR",
+            "date": "2019-01-04",
+            "key": "value"
+        },
+        {
+            "revenue": 567,
+            "currency": "USD",
+            "date": "2019-01-05",
+            "key": "value"
+        }
+    ]
+}

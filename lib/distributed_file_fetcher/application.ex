@@ -10,6 +10,9 @@ defmodule DistributedFileFetcher.Application do
     children = [
       # Starts a worker by calling: DistributedFileFetcher.Worker.start_link(arg)
       # {DistributedFileFetcher.Worker, arg}
+      DistributedFileFetcher.Repo,
+      {Oban, Application.fetch_env!(:distributed_file_fetcher, Oban)},
+      {Cluster.Supervisor, [topologies(), [name: DistributedFileFetcher.ClusterSupervisor]]},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
@@ -17,4 +20,6 @@ defmodule DistributedFileFetcher.Application do
     opts = [strategy: :one_for_one, name: DistributedFileFetcher.Supervisor]
     Supervisor.start_link(children, opts)
   end
+
+  defp topologies, do: Application.fetch_env!(:libcluster, :topologies)
 end
